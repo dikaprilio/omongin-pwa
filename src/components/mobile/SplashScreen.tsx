@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function SplashScreen({ children }: { children: React.ReactNode }) {
@@ -40,13 +39,10 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                             className="relative"
                         >
                             <div className="absolute inset-0 bg-white/20 rounded-3xl blur-2xl scale-150" />
-                            <Image
-                                src="/ecc-logo.png"
+                            <img
+                                src="/omongin-logo.svg"
                                 alt="Omongin"
-                                width={120}
-                                height={120}
-                                className="relative rounded-3xl shadow-2xl"
-                                priority
+                                className="relative w-28 h-28 object-contain drop-shadow-2xl"
                             />
                         </motion.div>
 

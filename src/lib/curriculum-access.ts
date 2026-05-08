@@ -9,6 +9,11 @@ import { isAdmin, isTeacher } from '@/lib/auth/roles'
  * @param moduleId The ID of the curriculum module (e.g., 'speaking-adults', 'kids-speak')
  */
 export async function verifyCurriculumAccess(moduleId: string) {
+    // DEMO MODE: bypass all auth checks — all curriculum modules are accessible
+    if (process.env.DEMO_MODE === 'true') {
+        return true
+    }
+
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
 
@@ -21,11 +26,6 @@ export async function verifyCurriculumAccess(moduleId: string) {
     const teacher = await isTeacher()
 
     if (admin || teacher) {
-        return true
-    }
-
-    // 2. Speaking Adults is free for demo
-    if (moduleId === 'speaking-adults') {
         return true
     }
 

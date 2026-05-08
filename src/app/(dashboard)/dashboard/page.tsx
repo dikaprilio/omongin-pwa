@@ -13,6 +13,11 @@ import { listCalendarEvents } from "@/app/(dashboard)/calendar/actions"
 import { isAdmin } from "@/lib/auth/roles"
 
 export default async function Dashboard() {
+    // Demo mode: block admin dashboard access
+    if (process.env.DEMO_MODE === 'true') {
+        redirect('/')
+    }
+
     const supabase = await createClient()
 
     const { data: { user } } = await supabase.auth.getUser()

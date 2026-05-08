@@ -78,6 +78,7 @@
     "msw": "^2.12.7",
     "tailwindcss": "^4",
     "typescript": "^5",
+    "vercel": "^53.2.0",
     "vitest": "^4.0.18"
   }
 }

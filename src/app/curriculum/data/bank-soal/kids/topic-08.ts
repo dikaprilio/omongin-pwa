@@ -1,0 +1,40 @@
+import type { TopicQuiz } from '../types';
+
+export const quiz: TopicQuiz = {
+    topicId: 8,
+    path: 'speaking-kids',
+    title: "Let's Go Shopping",
+    totalQuestions: 30,
+    questions: [
+        { id: "kids-08-001", question: "What does 'shopping' mean?", options: ["Bermain", "Belanja", "Makan", "Tidur"], correctIndex: 1, explanation: "'Shopping' artinya 'Belanja' - membeli barang di toko.", difficulty: "easy" },
+        { id: "kids-08-002", question: "Complete: 'I want to buy a new _____.'", options: ["apple", "shirt", "pencil", "book"], correctIndex: 1, explanation: "'Shirt' artinya 'kaos/kemeja' - pakaian yang bisa dibeli saat belanja.", difficulty: "easy" },
+        { id: "kids-08-003", question: "Translate: 'Berapa harganya?'", options: ["How much is it?", "How many is it?", "How old is it?", "How big is it?"], correctIndex: 0, explanation: "'Berapa harganya?' dalam bahasa Inggris adalah 'How much is it?'.", difficulty: "easy" },
+        { id: "kids-08-004", question: "What is 'shopping bag'?", options: ["cart", "bag", "basket", "box"], correctIndex: 1, explanation: "'Shopping bag' artinya 'tas belanja'.", difficulty: "easy" },
+        { id: "kids-08-005", question: "Choose: 'I need to go to the _____.'", options: ["school", "supermarket", "park", "hospital"], correctIndex: 1, explanation: "'Supermarket' artinya 'supermarket/toko besar' - tempat belanja.", difficulty: "easy" },
+        { id: "kids-08-006", question: "What is 'expensive' in Indonesian?", options: ["Murah", "Mahal", "Bagus", "Buruk"], correctIndex: 1, explanation: "'Expensive' artinya 'Mahal' - harganya tinggi.", difficulty: "easy" },
+        { id: "kids-08-007", question: "Complete: 'The shoes are too _____. I need smaller ones.'", options: ["cheap", "big", "small", "pretty"], correctIndex: 1, explanation: "'Too big' artinya 'terlalu besar' - butuh yang lebih kecil.", difficulty: "easy" },
+        { id: "kids-08-008", question: "Translate: 'Saya mau yang itu'", options: ["I want this one", "I want that one", "I want these ones", "I want those ones"], correctIndex: 1, explanation: "'Yang itu' (jauh) dalam bahasa Inggris adalah 'that one'.", difficulty: "medium" },
+        { id: "kids-08-009", question: "What is 'cash'?", options: ["coin", "card", "money/cash", "check"], correctIndex: 2, explanation: "'Cash' artinya 'uang tunai'.", difficulty: "easy" },
+        { id: "kids-08-010", question: "Complete: 'I want to _____ this dress.'", options: ["try on", "try out", "try in", "try up"], correctIndex: 0, explanation: "'Try on' artinya 'mencoba (pakaian)' - sebelum membeli.", difficulty: "medium" },
+        { id: "kids-08-011", question: "What does 'cheap' mean?", options: ["Mahal", "Murah", "Bagus", "Jelek"], correctIndex: 1, explanation: "'Cheap' artinya 'Murah' - harganya rendah.", difficulty: "easy" },
+        { id: "kids-08-012", question: "Choose: 'Do you have this in blue _____?'", options: ["size", "color", "price", "shape"], correctIndex: 1, explanation: "'In blue color' artinya 'dalam warna biru' - menanyakan pilihan warna.", difficulty: "easy" },
+        { id: "kids-08-013", question: "Translate: 'Ini pas di saya'", options: ["This is too big for me", "This fits me", "This is too small for me", "This doesn't fit me"], correctIndex: 1, explanation: "'Ini pas di saya' dalam bahasa Inggris adalah 'This fits me'.", difficulty: "medium" },
+        { id: "kids-08-014", question: "What is 'store'?", options: ["house", "school", "store/shop", "hospital"], correctIndex: 2, explanation: "'Store' atau 'shop' artinya 'toko' - tempat belanja.", difficulty: "easy" },
+        { id: "kids-08-015", question: "Complete: 'I will _____ with cash.'", options: ["buy", "pay", "get", "take"], correctIndex: 1, explanation: "'Pay with cash' artinya 'Bayar dengan tunai'. 'Pay' = bayar.", difficulty: "medium" },
+        { id: "kids-08-016", question: "What is 'receipt' in Indonesian?", options: ["Nota/Struk", "Uang", "Kembalian", "Diskon"], correctIndex: 0, explanation: "'Receipt' artinya 'Nota' atau 'Struk' - bukti pembelian.", difficulty: "medium" },
+        { id: "kids-08-017", question: "Choose: 'Can I get a _____, please?'", options: ["bag", "box", "wrapper", "all"], correctIndex: 0, explanation: "'Can I get a bag?' artinya 'Bisakah saya dapat kantong?' - untuk membawa belanjaan.", difficulty: "medium" },
+        { id: "kids-08-018", question: "Translate: 'Terlalu mahal untuk saya'", options: ["Too cheap for me", "Too expensive for me", "Too big for me", "Too small for me"], correctIndex: 1, explanation: "'Terlalu mahal untuk saya' dalam bahasa Inggris adalah 'Too expensive for me'.", difficulty: "easy" },
+        { id: "kids-08-019", question: "What is 'shopping cart'?", options: ["bag", "basket", "shopping cart", "shelf"], correctIndex: 2, explanation: "'Shopping cart' artinya 'troli belanja'.", difficulty: "easy" },
+        { id: "kids-08-020", question: "Complete: 'I'm just _____, thank you.'", options: ["buying", "paying", "looking", "eating"], correctIndex: 2, explanation: "'I'm just looking' artinya 'Saya hanya melihat-lihat' - saat belanja tanpa niat beli.", difficulty: "medium" },
+        { id: "kids-08-021", question: "What does 'discount' mean?", options: ["Mahal", "Diskon/Potongan harga", "Pajak", "Bonus"], correctIndex: 1, explanation: "'Discount' artinya 'Diskon' - harga lebih murah.", difficulty: "medium" },
+        { id: "kids-08-022", question: "Choose: 'What _____ do you wear?'", options: ["color", "size", "price", "style"], correctIndex: 1, explanation: "'What size do you wear?' artinya 'Ukuran berapa yang kamu pakai?' - untuk pakaian/sepatu.", difficulty: "medium" },
+        { id: "kids-08-023", question: "Translate: 'Saya hanya melihat-lihat'", options: ["I'm just buying", "I'm just looking", "I'm just paying", "I'm just leaving"], correctIndex: 1, explanation: "'Saya hanya melihat-lihat' dalam bahasa Inggris adalah 'I'm just looking'.", difficulty: "medium" },
+        { id: "kids-08-024", question: "What is 'price tag'?", options: ["receipt", "price tag", "money", "bag"], correctIndex: 1, explanation: "'Price tag' artinya 'label harga'.", difficulty: "easy" },
+        { id: "kids-08-025", question: "Complete: 'Do you take credit _____?'", options: ["money", "card", "coin", "cash"], correctIndex: 1, explanation: "'Credit card' artinya 'kartu kredit' - cara pembayaran.", difficulty: "medium" },
+        { id: "kids-08-026", question: "What is 'change' in Indonesian?", options: ["Harga", "Uang kembalian", "Diskon", "Pajak"], correctIndex: 1, explanation: "'Change' artinya 'Uang kembalian' - uang sisa setelah membayar.", difficulty: "medium" },
+        { id: "kids-08-027", question: "Choose: 'I'll _____ it!'", options: ["look", "see", "take", "try"], correctIndex: 2, explanation: "'I'll take it!' artinya 'Saya akan ambil ini!' - memutuskan untuk membeli.", difficulty: "medium" },
+        { id: "kids-08-028", question: "Translate: 'Dimana kasirnya?'", options: ["Where is the manager?", "Where is the cashier?", "Where is the customer?", "Where is the door?"], correctIndex: 1, explanation: "'Kasir' dalam bahasa Inggris adalah 'cashier'.", difficulty: "medium" },
+        { id: "kids-08-029", question: "What is 'credit card'?", options: ["cash", "coin", "credit card", "check"], correctIndex: 2, explanation: "'Credit card' artinya 'kartu kredit' - untuk pembayaran.", difficulty: "easy" },
+        { id: "kids-08-030", question: "Complete: 'Shopping is so much _____!'", options: ["work", "fun", "hard", "boring"], correctIndex: 1, explanation: "'Shopping is so much fun!' artinya 'Belanja sangat menyenangkan!'", difficulty: "easy" }
+    ]
+};

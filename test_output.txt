@@ -1,0 +1,34 @@
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90mD:/Next/english-chill-course[39m
+
+ [31mΓ¥»[39m src/__tests__/unit/actions/user-actions.test.ts [2m([22m[2m6 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 18[2mms[22m[39m
+       [32mΓ£ô[39m should create a user successfully with valid data[32m 7[2mms[22m[39m
+       [32mΓ£ô[39m should fail if validation fails (e.g. invalid email)[32m 1[2mms[22m[39m
+[31m       [31m├ù[31m should edit user Auth and Profile successfully[39m[32m 5[2mms[22m[39m
+       [32mΓ£ô[39m should fail if validation fails[32m 1[2mms[22m[39m
+       [32mΓ£ô[39m should delete user from Auth and explicitly attempt from Profile[32m 1[2mms[22m[39m
+       [32mΓ£ô[39m should return error if userId is missing[32m 0[2mms[22m[39m
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ» Failed Tests 1 ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»
+
+ FAIL  src/__tests__/unit/actions/user-actions.test.ts > User Management Actions > editUserAction > should edit user Auth and Profile successfully
+AssertionError: expected "vi.fn()" to be called with arguments: [ 'test-user-123', { ΓÇª(2) } ]
+
+Number of calls: 0
+
+ Γ¥» src/__tests__/unit/actions/user-actions.test.ts:107:50
+    105| 
+    106|             expect(requireAdmin).toHaveBeenCalled()
+    107|             expect(mockAuthAdmin.updateUserById).toHaveBeenCalledWith(ΓÇª
+       |                                                  ^
+    108|                 email: 'edited@example.com',
+    109|                 user_metadata: { full_name: 'Edited Name' }
+
+ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»ΓÄ»[1/1]ΓÄ»
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 09:41:51
+[2m   Duration [22m 1.98s[2m (transform 108ms, setup 181ms, import 121ms, tests 18ms, environment 1.32s)[22m
+

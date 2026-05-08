@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "next build --webpack",
+  "outputDirectory": "dist",
+  "framework": null,
+  "installCommand": "npm install",
+  "github": {
+    "silent": true
+  }
+}
